@@ -2,8 +2,7 @@
 //  RelatedArtifact.swift
 //  SwiftFHIR
 //
-//  Generated from FHIR 3.0.1.11917 (http://hl7.org/fhir/StructureDefinition/RelatedArtifact) on 2017-04-25.
-//  2017, SMART Health IT.
+//  Generated from FHIR 3.0.1.11917 (http://hl7.org/fhir/StructureDefinition/RelatedArtifact)
 //
 
 import Foundation
