@@ -7,12 +7,11 @@
 //
 
 import Foundation
-import CoreData
 
 /**
 Abstract superclass for all FHIR data elements.
 */
-open class FHIRAbstractBase: NSManagedObject, FHIRJSONType, CustomStringConvertible, CustomDebugStringConvertible {
+open class FHIRAbstractBase: FHIRJSONType, CustomStringConvertible, CustomDebugStringConvertible {
 	
 	public typealias JSONType = FHIRJSON
 	
