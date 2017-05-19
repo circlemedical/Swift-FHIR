@@ -2,7 +2,7 @@
 //  CodeSystems.swift
 //  SwiftFHIR
 //
-//  Generated from FHIR {{ info.version }} on {{ info.date }}.
+//  Generated from FHIR {{ info.version }}.
 //  {{ info.year }}, SMART Health IT.
 //
 {% for system in systems %}{% if system.generate_enum %}
