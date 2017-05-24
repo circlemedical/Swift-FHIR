@@ -13,6 +13,8 @@ import Foundation
 Abstract superclass for all FHIR resource models.
 */
 open class FHIRAbstractResource: FHIRAbstractBase {
+
+    public var documentID: String?
 	
 	/// A specific version id, if the instance was created using `vread`.
 	public var _versionId: String?
