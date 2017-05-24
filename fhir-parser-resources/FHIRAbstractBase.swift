@@ -19,8 +19,6 @@ open class FHIRAbstractBase: FHIRJSONType, CustomStringConvertible, CustomDebugS
 	open class var resourceType: String {
 		get { return "FHIRAbstractBase" }
 	}
-
-    public var documentID: String?
 	
 	/// The parent/owner of the receiver, if any. Used to dereference resources.
 	public weak var _owner: FHIRAbstractBase?
