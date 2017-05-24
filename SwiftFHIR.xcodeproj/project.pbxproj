@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DA5B42E61FB2E5DDC9CE886 /* Pods_SwiftFHIR_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EDD6E26EBD91F1CC1DF5F1 /* Pods_SwiftFHIR_iOSTests.framework */; };
+		B6B2B32B9DBEBE4C63458248 /* Pods_SwiftFHIR_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E680C4CD6FF06F1A716175 /* Pods_SwiftFHIR_iOS.framework */; };
 		EE02F6051ACF252000179969 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02F5911ACF252000179969 /* Address.swift */; };
 		EE02F6061ACF252000179969 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02F5911ACF252000179969 /* Address.swift */; };
 		EE02F6071ACF252000179969 /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02F5921ACF252000179969 /* Age.swift */; };
@@ -647,6 +649,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004C31D5EE9FA80889BF66F2 /* Pods-SwiftFHIR-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFHIR-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFHIR-iOS/Pods-SwiftFHIR-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		05EDD6E26EBD91F1CC1DF5F1 /* Pods_SwiftFHIR_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFHIR_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C513AD2877874697CAEE6BD /* Pods-SwiftFHIR-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFHIR-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFHIR-iOSTests/Pods-SwiftFHIR-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		654BEA48043004589F4FE8D6 /* Pods-SwiftFHIR-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFHIR-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFHIR-iOSTests/Pods-SwiftFHIR-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C815271E1ED5443F00AE472C /* SwiftFHIR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFHIR-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7DDD62F009458EB95C5C6B8 /* Pods-SwiftFHIR-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftFHIR-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftFHIR-iOS/Pods-SwiftFHIR-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EE02F5911ACF252000179969 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		EE02F5921ACF252000179969 /* Age.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Age.swift; sourceTree = "<group>"; };
 		EE02F5931ACF252000179969 /* AllergyIntolerance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllergyIntolerance.swift; sourceTree = "<group>"; };
@@ -947,6 +955,7 @@
 		EEEE31221BB2828D008866E2 /* generator-settings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "generator-settings.py"; sourceTree = "<group>"; };
 		EEEE31231BB2828D008866E2 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		EEF20E151A5D4FFE009A6EDA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F4E680C4CD6FF06F1A716175 /* Pods_SwiftFHIR_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftFHIR_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -969,6 +978,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B2B32B9DBEBE4C63458248 /* Pods_SwiftFHIR_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -977,6 +987,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE6DA8631A5D4B3A00E00708 /* SwiftFHIR.framework in Frameworks */,
+				3DA5B42E61FB2E5DDC9CE886 /* Pods_SwiftFHIR_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,15 +1001,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E9CED2F1ADAB34B6BFF6D5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E680C4CD6FF06F1A716175 /* Pods_SwiftFHIR_iOS.framework */,
+				05EDD6E26EBD91F1CC1DF5F1 /* Pods_SwiftFHIR_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98FE3CA183C1E1948476EC51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7DDD62F009458EB95C5C6B8 /* Pods-SwiftFHIR-iOS.debug.xcconfig */,
+				004C31D5EE9FA80889BF66F2 /* Pods-SwiftFHIR-iOS.release.xcconfig */,
+				0C513AD2877874697CAEE6BD /* Pods-SwiftFHIR-iOSTests.debug.xcconfig */,
+				654BEA48043004589F4FE8D6 /* Pods-SwiftFHIR-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE684C1419A789BA00B5A2C0 = {
 			isa = PBXGroup;
 			children = (
+				C815271E1ED5443F00AE472C /* SwiftFHIR-Bridging-Header.h */,
 				EEF20E151A5D4FFE009A6EDA /* README.md */,
 				EE1310DC1C1B7E3700D9DAE7 /* Package.swift */,
 				EE684C2019A789BA00B5A2C0 /* Sources */,
 				EE684C2A19A789BA00B5A2C0 /* Tests */,
 				EEEE31291BB2829A008866E2 /* Metadata */,
 				EE684C1F19A789BA00B5A2C0 /* Products */,
+				98FE3CA183C1E1948476EC51 /* Pods */,
+				8E9CED2F1ADAB34B6BFF6D5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1412,10 +1446,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE6DA8541A5D4B1000E00708 /* Build configuration list for PBXNativeTarget "SwiftFHIR-iOS" */;
 			buildPhases = (
+				D3ECC56FE8FA1E06012F6184 /* [CP] Check Pods Manifest.lock */,
 				EE6DA7CE1A5D4B1000E00708 /* Sources */,
 				EE6DA8501A5D4B1000E00708 /* Frameworks */,
 				EE6DA8511A5D4B1000E00708 /* Headers */,
 				EE6DA8531A5D4B1000E00708 /* Resources */,
+				38A765EB35AE559063ECE50A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1430,9 +1466,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE6DA8661A5D4B3A00E00708 /* Build configuration list for PBXNativeTarget "SwiftFHIR-iOSTests" */;
 			buildPhases = (
+				E6F091BBEB12318E86DBEEEA /* [CP] Check Pods Manifest.lock */,
 				EE6DA8591A5D4B3A00E00708 /* Sources */,
 				EE6DA85A1A5D4B3A00E00708 /* Frameworks */,
 				EE6DA85B1A5D4B3A00E00708 /* Resources */,
+				69DA31EC4BC35721E7375BF9 /* [CP] Embed Pods Frameworks */,
+				B16AB7AC57121A3DAE246592 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1483,7 +1522,7 @@
 						LastSwiftMigration = 0800;
 					};
 					EE6DA7CD1A5D4B1000E00708 = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
 					};
 					EE6DA85C1A5D4B3A00E00708 = {
 						CreatedOnToolsVersion = 6.2;
@@ -1551,6 +1590,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38A765EB35AE559063ECE50A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftFHIR-iOS/Pods-SwiftFHIR-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DA31EC4BC35721E7375BF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftFHIR-iOSTests/Pods-SwiftFHIR-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16AB7AC57121A3DAE246592 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftFHIR-iOSTests/Pods-SwiftFHIR-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3ECC56FE8FA1E06012F6184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F091BBEB12318E86DBEEEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE684C1919A789BA00B5A2C0 /* Sources */ = {
@@ -2388,7 +2505,9 @@
 		};
 		EE6DA8551A5D4B1000E00708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DDD62F009458EB95C5C6B8 /* Pods-SwiftFHIR-iOS.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -2399,18 +2518,23 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DNO_MODEL_IMPORT";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.chip.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftFHIR;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftFHIR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		EE6DA8561A5D4B1000E00708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004C31D5EE9FA80889BF66F2 /* Pods-SwiftFHIR-iOS.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -2421,11 +2545,13 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DNO_MODEL_IMPORT";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.chip.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftFHIR;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/SwiftFHIR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
@@ -2433,6 +2559,7 @@
 		};
 		EE6DA8671A5D4B3A00E00708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C513AD2877874697CAEE6BD /* Pods-SwiftFHIR-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
@@ -2448,6 +2575,7 @@
 		};
 		EE6DA8681A5D4B3A00E00708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654BEA48043004589F4FE8D6 /* Pods-SwiftFHIR-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COPY_PHASE_STRIP = NO;
