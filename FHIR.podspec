@@ -25,4 +25,6 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.pod_target_xcconfig   = { 'OTHER_SWIFT_FLAGS' => '-DNO_MODEL_IMPORT' }
   s.source_files          = "Sources/*/*.swift"
+
+  spec.dependency 'couchbase-lite-ios'
 end
