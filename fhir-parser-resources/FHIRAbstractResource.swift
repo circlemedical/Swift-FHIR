@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import CouchbaseLite
 
 /**
 Abstract superclass for all FHIR resource models.
