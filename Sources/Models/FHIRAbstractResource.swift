@@ -13,17 +13,11 @@ import Foundation
 Abstract superclass for all FHIR resource models.
 */
 open class FHIRAbstractResource: FHIRAbstractBase {
+
+    public var backingStore: CBLDocument?
 	
 	/// A specific version id, if the instance was created using `vread`.
 	public var _versionId: String?
-	
-	/// If this instance lives on a server, this property represents that server.
-	public var _server: FHIRServer? {
-		get { return __server ?? _owningResource?._server }
-		set { __server = newValue }
-	}
-	var __server: FHIRServer?
-	
 	
 	// MARK: - FHIRJSONType
 	
@@ -76,7 +70,7 @@ open class FHIRAbstractResource: FHIRAbstractBase {
 	// MARK: - CustomStringConvertible
 	
 	override open var description: String {
-		return "<\(type(of: self).resourceType)> \(__server?.baseURL.absoluteString ?? "nil")"
+		return "<\(type(of: self).resourceType)>"
 	}
 }
 

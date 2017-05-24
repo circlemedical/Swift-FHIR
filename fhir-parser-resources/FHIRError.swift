@@ -27,19 +27,6 @@ public enum FHIRError: Error, CustomStringConvertible {
 	case resourceFailedToValidate(FHIRValidationError)
 	case resourceCannotContainItself
 	
-	case requestCannotPrepareBody
-	case requestNotSent(String)
-	case requestError(Int, String)
-	case noRequestHandlerAvailable(FHIRRequestMethod)
-	case noResponseReceived
-	
-	/// The "Location" response (1st string) specifies a different type than exected (2nd string).
-	case responseLocationHeaderResourceTypeMismatch(String, String)
-	case responseNoResourceReceived
-	
-	/// The resource type received (1st string) does not match the expected type (2nd string).
-	case responseResourceTypeMismatch(String, String)
-	
 	case operationConfigurationError(String)
 	case operationInputParameterMissing(String)
 	case operationNotSupported(String)
@@ -71,23 +58,6 @@ public enum FHIRError: Error, CustomStringConvertible {
 			return "\("Failed to validate resource".fhir_localized): \(error)"
 		case .resourceCannotContainItself:
 			return "A resource cannot contain itself".fhir_localized
-		
-		case .requestCannotPrepareBody:
-			return "`FHIRRequestHandler` cannot prepare request body data".fhir_localized
-		case .requestNotSent(let reason):
-			return "\("Request not sent".fhir_localized): \(reason)"
-		case .requestError(let status, let message):
-			return "\("Error".fhir_localized) \(status): \(message)"
-		case .noRequestHandlerAvailable(let type):
-			return "\("No request handler is available for requests of type".fhir_localized) “\(type.rawValue)”"
-		case .noResponseReceived:
-			return "No response received".fhir_localized
-		case .responseLocationHeaderResourceTypeMismatch(let location, let expectedType):
-			return "\("“Location” header resource type mismatch. Expecting".fhir_localized) “\(expectedType)” \("in".fhir_localized) “\(location)”"
-		case .responseNoResourceReceived:
-			return "No resource data was received with the response".fhir_localized
-		case .responseResourceTypeMismatch(let receivedType, let expectedType):
-			return "Returned resource is of wrong type, expected “\(expectedType)” but received “\(receivedType)”"
 		
 		case .operationConfigurationError(let message):
 			return message

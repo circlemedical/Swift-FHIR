@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /**
 Abstract superclass for all FHIR data elements.
 */

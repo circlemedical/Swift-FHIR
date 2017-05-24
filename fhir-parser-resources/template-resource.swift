@@ -2,8 +2,7 @@
 //  {{ profile.targetname }}.swift
 //  SwiftFHIR
 //
-//  Generated from FHIR {{ info.version }} ({{ profile.url }}) on {{ info.date }}.
-//  {{ info.year }}, SMART Health IT.
+//  Generated from FHIR {{ info.version }} ({{ profile.url }})
 //
 
 import Foundation
