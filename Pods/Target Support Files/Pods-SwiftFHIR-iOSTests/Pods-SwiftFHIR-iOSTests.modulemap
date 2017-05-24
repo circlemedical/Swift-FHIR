@@ -1,6 +1,0 @@
-framework module Pods_SwiftFHIR_iOSTests {
-  umbrella header "Pods-SwiftFHIR-iOSTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

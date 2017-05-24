@@ -4,10 +4,4 @@
    <FileRef
       location = "container:SwiftFHIR.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:SwiftFHIR.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
 </Workspace>
